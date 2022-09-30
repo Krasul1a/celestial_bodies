@@ -36,7 +36,8 @@ while (run):  # GAMELOOP
         if event.type == pg.KEYDOWN:
             if event.key == pg.K_ESCAPE:
                 run = False
-
+        if event.type == pg.QUIT:
+            run = False
     r = math.sqrt((x - x0) ** 2 + (y - y0) ** 2)
 
     ax = mass1 * (x0 - x) / r ** 3
